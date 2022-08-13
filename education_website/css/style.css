@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+:root {
+    --pink: #FF046F;
+    --violet: #C63BFA;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: var(--pink);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.heading {
+    font-size: 4rem;
+    color: var(--pink);
+    text-align: center;
+    /* padding: 0 5rem; */
+    padding-top: 1rem;
+    /* padding-top: 16px; */
+    letter-spacing: .2rem;
+    font-weight: 500;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: #aaa;
+    font-weight: 400;
+    padding: 0 10rem;
+    /* border: 1px solid red; */
+}
+
+.about .row {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .row .image img {
+    height: 500px;
+    width: 400px;
+}
+
+.about .row .content {
+    padding-left: 5rem;
+    padding-right: 50px;
+    /* border: 1px solid red; */
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: var(--pink);
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #999;
+    padding: 1rem 0;
+}
+
+.about .row .content button {
+    height: 3rem;
+    border: none;
+    padding: 0 20px 0 20px;
+    background-color: var(--violet);
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .3);
+    border-radius: 5rem;
+    transition: .2s;
+}
+
+.about .row .content button:hover {
+    letter-spacing: .2rem;
+    opacity: .8;
+}
+
+
+/* teacher */
+.teacher {
+    background: #f9f9f9;
+    margin: 5rem 0;
+}
+
+.teacher .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.teacher .card-container .card {
+    padding: 2rem;
+    border: 1px solid rgb(231, 228, 228);
+    margin: 2rem;
+    background: #fff;
+    text-align: center;
+    width: 28rem;
+}
+
+.teacher .card-container .card img {
+    /* width: 24rem;
+    height: 270px; */
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale();
+    transition: .5s;
+
+}
+
+.teacher .card-container .card img:hover {
+    filter: grayscale(0);
+}
+
+.teacher .card-container .card h3 {
+    color: var(--pink);
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+
+.teacher .card-container .card p {
+    font-size: 1.7rem;
+    color: #666;
+}
+
+.teacher .card-container .card .icons {
+    font-size: 2rem;
+    padding-top: 5px;
+}
+
+.teacher .card-container .card .icons a {
+    color: var(--pink);
+    padding-right: 5px;
+}
+
+.teacher .card-container .card .icons a:hover {
+    color: var(--violet);
+    transition: .5s;
+}
+
+
+/* course */
+
+.course .box-container {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+
+.course .box-container .box {
+    border: 1px solid rgb(240, 232, 232);
+    /* height: 18rem; */
+    width: 25rem;
+    margin: 3.5rem 2rem;
+    text-align: center;
+    padding: 5px;
+}
+
+.course .box-container .box i {
+    font-size: 5rem;
+}
+
+.course .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--violet);
+}
+
+.course .box-container .box p {
+    font-size: 1.5rem;
+    color: #999;
+}
+
+
+
+/* review */
+.review {
+    background: #f9f9f9;
+    margin: 5rem 0 0 0;
+    /* width: 80%;
+    margin: auto; */
+}
+
+.review .review-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem 0;
+}
+
+.review .review-container .box {
+    width: 250px;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+    border: 2px solid rgb(245, 241, 241);
+    border-top: none;
+    text-align: center;
+}
+
+.review .review-container img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -60px;
+    border: .6rem solid var(--pink);
+    border-left: .6rem solid var(--violet);
+    border-bottom: .6rem solid var(--violet);
+
+}
+
+.review .review-container .box h3 {
+    color: var(--pink);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.review .review-container .box p {
+    color: #999;
+    font-size: 1.5rem;
+}
+
+.review .review-container .box .stars {
+    color: rgb(184, 184, 53);
+    font-size: 2rem;
+    padding-top: 15px;
+    transition: .5s;
+}
+
+.review .review-container .box .stars:hover {
+    color: var(--pink);
+}
+
+
+/* contact */
+.contact {
+    background: #333;
+}
+
+.contact .contact-row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5rem 0;
+
+}
+
+.contact .contact-row .image img {
+    height: 80vh;
+    width: 100%;
+}
+
+.contact .contact-row .form-container {
+    width: 50%;
+    padding: 0 6rem;
+}
+
+.contact .contact-row .form-container input,
+textarea {
+    height: 4rem;
+    width: 100%;
+    background: #fff;
+    border: none;
+    border-radius: 5rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    color: var(--pink);
+    font-size: 1.7rem;
+    transition: .2s linear;
+}
+
+.contact .contact-row .form-container textarea {
+    height: 20rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    resize: none;
+}
+
+.contact .contact-row .form-container input:focus,
+textarea:focus {
+    border: .2rem solid var(--pink);
+}
+
+
+.contact .contact-row .form-container input[type="submit"] {
+    width: 120px;
+    background: var(--pink);
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .2s;
+}
+
+.contact .contact-row .form-container input[type="submit"]:hover {
+    background: none;
+    color: var(--pink);
+    border: .2rem solid var(--pink);
+}
+
+@media (max-width:768px) {
+
+    /* html {
+        font-size: 55%;
+    } */
+
+    .about .row {
+        flex-flow: column-reverse;
+    }
+
+    .about .row .image img {
+        height: 60vh;
+        width: 90vh;
+    }
+
+    .about .row .content {
+        padding: 0 2rem;
+    }
+
+    .contact .contact-row {
+        flex-flow: column;
+    }
+
+    .contact .contact-row .form-container {
+        width: 90%;
+        /* padding-right: 6rem; */
+        /* padding: 1rem; */
+    }
+}
