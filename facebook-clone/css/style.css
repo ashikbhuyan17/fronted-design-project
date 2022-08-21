@@ -369,6 +369,7 @@ li {
     border-radius: 5px;
     padding: 20px;
     color: #626262;
+    margin-bottom: 20px;
 }
 
 .user-profile span {
@@ -402,4 +403,32 @@ li {
     display: inline-flex;
     align-items: center;
     margin-right: 30px;
+}
+
+.post-profile-icon {
+    display: flex;
+    align-items: center;
+}
+
+.post-profile-icon img {
+    width: 25px;
+    border-radius: 50%;
+}
+
+.load-more-button {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #9a9a9a;
+    color: #626262;
+    background: transparent;
+    border-radius: 4px;
+}
+
+.footer {
+    text-align: center;
+    color: #9a9a9a;
+    padding: 10px 0 20px;
+    font-size: 13px;
 }
