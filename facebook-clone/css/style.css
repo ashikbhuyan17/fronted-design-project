@@ -375,3 +375,31 @@ li {
     font-size: 13px;
     color: #9a9a9a;
 }
+
+.post-container p {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.post-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity-icon div img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.activity-icon div {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}
