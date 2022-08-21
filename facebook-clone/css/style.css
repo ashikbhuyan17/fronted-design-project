@@ -178,7 +178,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .sidebar-title h4 {
@@ -281,4 +281,48 @@ li {
 .online-list .online::after {
     top: unset;
     bottom: 5px;
+}
+
+
+
+/* main content */
+.story-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.story {
+    flex-basis: 18%;
+}
+
+
+/*write-post-container  */
+.write-post-container {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    color: #626262;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-profile p {
+    /* margin-bottom: -5px; */
+    font-weight: 500;
+    color: #626262;
+}
+
+.user-profile small {
+    font-size: 12px;
 }
