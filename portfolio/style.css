@@ -289,4 +289,52 @@ nav ul li a:hover::after {
     color: #fff;
     text-decoration: none;
     text-align: center;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+/*-------------- contact form -------*/
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.social-icon {
+    margin-top: 30px;
+}
+
+.social-icon a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #ababab;
+    margin-right: 10px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+/* .social-icon a i{
+    font-size: 25px;
+    color: #ababab;
+    margin-right: 10px;
+} */
+
+.social-icon a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
 }
