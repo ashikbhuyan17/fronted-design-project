@@ -297,6 +297,10 @@ nav ul li a:hover::after {
 }
 
 /*-------------- contact form -------*/
+#contact {
+    margin: 50px 0px;
+}
+
 .contact-left {
     flex-basis: 35%;
 }
@@ -311,9 +315,7 @@ nav ul li a:hover::after {
     font-size: 25px;
 }
 
-.contact-right {
-    flex-basis: 60%;
-}
+
 
 .social-icon {
     margin-top: 30px;
@@ -337,4 +339,56 @@ nav ul li a:hover::after {
 .social-icon a:hover {
     color: #ff004f;
     transform: translateY(-5px);
+}
+
+
+.btn2 {
+    margin: 30px 0px;
+    width: fit-content;
+    display: block;
+    border: 1px solid #b54769;
+    padding: 14px 40px;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background: #ff004f;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-right input,
+textarea {
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+    background: #262626;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+}
+
+button {
+    border: 1px solid #b54769;
+    padding: 14px 40px;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.5s;
+    background: #ff004f;
+    color: #fff;
+    font-size: 18px;
+}
+
+.copyRight {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
 }
