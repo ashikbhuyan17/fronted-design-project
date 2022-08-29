@@ -129,7 +129,6 @@ header a:hover {
 
 #newsletter h1 {
     float: left;
-    /* margin: 0; */
 }
 
 #newsletter form {
@@ -138,21 +137,27 @@ header a:hover {
 }
 
 #newsletter input[type="email"] {
-    padding: 4px;
+    padding: 5px;
     height: 25px;
     width: 250px;
+    outline: none;
+    border: none;
 }
 
 
-#boxes {
-    margin-top: 20px;
+
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 30px;
 }
 
-#boxes .box {
-    width: 30%;
+.box-container .box {
     text-align: center;
-    float: left;
-    padding: 10px;
+    background: #fff;
+    padding: 10px 10px 10px 0px;
 }
 
 #boxes .box img {
@@ -200,5 +205,17 @@ footer {
 
     #newsletter .button_1 {
         margin-top: 10px;
+    }
+
+    .box-container .box {
+
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .box-container .box {
+
+        flex-basis: 50%;
     }
 }
