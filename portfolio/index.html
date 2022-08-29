@@ -15,12 +15,14 @@
         <div class="container">
             <nav>
                 <img src="./images//logo.png" alt="" class="logo">
-                <ul>
+                <ul id="sideMenu">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Service</a></li>
                     <li><a href="">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>WEB DEVELOPER</p>
@@ -183,6 +185,19 @@
             event.currentTarget.classList.add("active-link")
             document.getElementById(tabName).classList.add("active-tab")
         }
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById('sideMenu')
+
+        function openMenu() {
+            sideMenu.style.right = '0'
+        }
+
+        function closeMenu() {
+            sideMenu.style.right = '-250px'
+        }
+
     </script>
 </body>
 
