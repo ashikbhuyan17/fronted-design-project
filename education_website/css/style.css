@@ -29,7 +29,7 @@ html {
     font-size: 4rem;
     color: var(--pink);
     text-align: center;
-    /* padding: 0 5rem; */
+    /* 1rem = 16px */
     padding-top: 1rem;
     /* padding-top: 16px; */
     letter-spacing: .2rem;
@@ -42,14 +42,21 @@ html {
     color: #aaa;
     font-weight: 400;
     padding: 0 10rem;
-    /* border: 1px solid red; */
 }
 
 .about .row {
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.about .row .image {
+    flex-basis: 50%;
+    /* border: 1px solid red; */
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .about .row .image img {
@@ -59,8 +66,9 @@ html {
 
 .about .row .content {
     padding-left: 5rem;
-    padding-right: 50px;
     /* border: 1px solid red; */
+    flex-basis: 50%;
+
 }
 
 .about .row .content h3 {
@@ -325,6 +333,15 @@ textarea:focus {
     /* html {
         font-size: 55%;
     } */
+
+    .about .row .image {
+        flex-basis: 100%;
+    }
+
+    .about .row .content {
+        flex-basis: 100%;
+
+    }
 
     .about .row {
         flex-flow: column-reverse;
