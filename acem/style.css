@@ -27,7 +27,7 @@ header ul {
 
 }
 
-/* header */
+/*------------- header----------------- */
 header {
     background: #35424a;
     color: #ffffff;
@@ -37,7 +37,7 @@ header {
     border-bottom: 3px solid #e8491d;
 }
 
-header #branding {
+/* header #branding {
     float: left;
 }
 
@@ -49,6 +49,22 @@ header #branding h1 {
 header nav {
     float: right;
     margin-top: 10px;
+} */
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -74,19 +90,23 @@ header a {
 header .highlight,
 header .current a {
     color: #e8491d;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 header a:hover {
     color: #cccccc;
     font-weight: bold;
+    text-decoration: none;
 }
 
-/* showcase */
+/* ------------showcase-------- */
 
 .showcase {
     min-height: 400px;
-    background: url('./images/cover.png') no-repeat 0 -400px;
+    background: url('./images/cover.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     text-align: center;
     color: #ffffff;
 }
