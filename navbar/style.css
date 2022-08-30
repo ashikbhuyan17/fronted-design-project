@@ -109,6 +109,7 @@ header label {
         transform-origin: top;
         transform: scaleY(0);
         opacity: 0;
+        transition: .5s;
     }
 
     header .navbar a {
