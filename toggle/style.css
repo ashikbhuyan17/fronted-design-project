@@ -21,15 +21,15 @@ h1 {
 }
 
 .header {
+    position: fixed;
     background-color: #eb4d4b;
     width: 100%;
     height: 60px;
-    position: fixed;
     z-index: 10;
 }
 
 .sidebarIconToggle {
-    width: 22px;
+    width: 30px;
     height: 22px;
     position: absolute;
     z-index: 20;
@@ -38,12 +38,36 @@ h1 {
     background: white;
 }
 
+#snipper {
+    width: 20px;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.spinner {
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s;
+    width: 20px;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.spinner.middle,
+.spinner.bottom {
+    margin-top: 3px;
+}
+
 .main {
     height: 100%;
     margin-top: 60px;
-    padding: 10px 50px;
+    /* padding: 10px 50px; */
     /* margin-left: 250px; */
 
+}
+
+.main.active {
+    margin-left: 260px;
 }
 
 #sidebarMenu {
@@ -56,6 +80,24 @@ h1 {
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
     background: #2e86de;
+}
+
+#openSidebarMenu:checked~#sidebarMenu {
+    transform: translateX(0);
+}
+
+#openSidebarMenu:checked~.sidebarIconToggle>.spinner.middle {
+    opacity: 0;
+}
+
+#openSidebarMenu:checked~.sidebarIconToggle>.spinner.top {
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+
+#openSidebarMenu:checked~.sidebarIconToggle>.spinner.bottom {
+    transform: rotate(-135deg);
+    margin-top: -9px;
 }
 
 .menu {
@@ -75,8 +117,4 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
-}
-
-#openSidebarMenu:checked~#sidebarMenu {
-    transform: translateX(0);
 }

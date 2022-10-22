@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>sidebar click</title>
+</head>
+
+<body>
+    <div id="toggle"></div>
+    <div id="sidebar">
+        <ul>
+            <!-- (li>a)*4 -->
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Portfolio</a></li>
+        </ul>
+    </div>
+    <div class="main" id="main">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis enim facere maiores voluptates illum,
+            neque beatae, quae consectetur hic quaerat dolores distinctio reprehenderit illo corporis a optio sequi
+            impedit velit magnam! Laborum, aliquam consequuntur qui sed, fuga nesciunt sapiente consectetur, possimus
+            omnis doloribus deleniti aliquid. Iste quis natus iure a amet excepturi provident ab quo perferendis odio
+            alias tempore voluptates, ipsum totam. Officiis ducimus porro nostrum ea ex, quibusdam dolore dolorum ut
+            delectus voluptate illum cum incidunt, esse optio commodi libero? Perspiciatis repellendus beatae ullam,
+            reiciendis animi eaque, consectetur iusto ut praesentium optio totam, sit esse? Iure omnis aliquid cumque.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis enim facere maiores voluptates illum,
+            neque beatae, quae consectetur hic quaerat dolores distinctio reprehenderit illo corporis a optio sequi
+            impedit velit magnam! Laborum, aliquam consequuntur qui sed, fuga nesciunt sapiente consectetur, possimus
+            omnis doloribus deleniti aliquid. Iste quis natus iure a amet excepturi provident ab quo perferendis odio
+            alias tempore voluptates, ipsum totam. Officiis ducimus porro nostrum ea ex, quibusdam dolore dolorum ut
+            delectus voluptate illum cum incidunt, esse optio commodi libero? Perspiciatis repellendus beatae ullam,
+            reiciendis animi eaque, consectetur iusto ut praesentium optio totam, sit esse? Iure omnis aliquid cumque.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis enim facere maiores voluptates illum,
+            neque beatae, quae consectetur hic quaerat dolores distinctio reprehenderit illo corporis a optio sequi
+            impedit velit magnam! Laborum, aliquam consequuntur qui sed, fuga nesciunt sapiente consectetur, possimus
+            omnis doloribus deleniti aliquid. Iste quis natus iure a amet excepturi provident ab quo perferendis odio
+            alias tempore voluptates, ipsum totam. Officiis ducimus porro nostrum ea ex, quibusdam dolore dolorum ut
+            delectus voluptate illum cum incidunt, esse optio commodi libero? Perspiciatis repellendus beatae ullam,
+            reiciendis animi eaque, consectetur iusto ut praesentium optio totam, sit esse? Iure omnis aliquid cumque.
+        </p>
+    </div>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
+        const main = document.getElementById('main');
+
+
+        toggle.onclick = function () {
+            toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

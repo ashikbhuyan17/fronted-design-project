@@ -12,10 +12,12 @@
 <body>
     <div class="header"></div>
     <input type="checkbox" id="openSidebarMenu">
-    <label for="openSidebarMenu" class="sidebarIconToggle">
+    <label for="openSidebarMenu" class="sidebarIconToggle" id="toggle">
+
         <div class="spinner top"></div>
         <div class="spinner middle"></div>
         <div class="spinner bottom"></div>
+
     </label>
     <div id="sidebarMenu">
         <ul class="menu">
@@ -26,7 +28,7 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </div>
-    <div class="main">
+    <div class="main" id="main">
         <h1>Pure CSS Sidebar Toggle Menu</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste repellat, eos, blanditiis, unde, accusamus
             voluptatibus numquam inventore quas voluptate consequatur consequuntur. Incidunt fugit dolor dolorem
@@ -51,6 +53,19 @@
             nesciunt sunt, ad dolor repellendus, unde quas culpa? Fuga corporis reprehenderit ex repudiandae assumenda
             cumque quas! Molestias modi unde vero non pariatur at ipsa laborum.</p>
     </div>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebarMenu = document.getElementById('sidebarMenu');
+        const main = document.getElementById('main');
+
+
+        toggle.onclick = function () {
+            toggle.classList.toggle('active');
+            sidebarMenu.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
