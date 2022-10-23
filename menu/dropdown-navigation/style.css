@@ -122,12 +122,18 @@ header label {
 
     header .navbar ul li ul li {
         background: #eee;
+        border: none;
     }
 
     header .navbar ul li ul li ul {
         width: 100%;
         left: 0;
     }
+
+    /* header .navbar ul li ul li ul li a {
+        background: rgb(163, 136, 136);
+        color: red;
+    } */
 
     #menu-bar:checked~.navbar {
         display: initial;
