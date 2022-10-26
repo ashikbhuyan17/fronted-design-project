@@ -48,23 +48,25 @@ a {
 	display: flex;
 	/* justify-content: space-between;
 	align-items: center; */
-	padding: 10px 0;
+	padding: 20px 0;
 	border-radius: 4px;
+	border-bottom: 2px solid rgb(252, 248, 248);
 }
 
 .logo {
 	display: flex;
 	width: 10%;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	justify-content: center;
 	align-items: center;
 	flex-basis: 15%;
 	padding: 0 0 0 50px;
+	margin-left: 15px;
 }
 
 
 .header .nav-menu {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	flex-basis: 55%;
 	padding: 0 15px;
 	margin-left: 60px;
@@ -76,7 +78,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-left: 150px;
+	padding-left: 100px;
 }
 
 .search-icon a i {
@@ -109,13 +111,18 @@ a {
 }
 
 .header .menu>.menu-item>a {
+	/* border: 1px solid red; */
 	display: block;
-	padding: 12px 0;
-	font-size: 16px;
+	padding: 20px 0;
+	font-size: 18px;
 	color: #000000;
 	text-transform: capitalize;
-	font-weight: 600;
+	font-weight: 400;
 	transition: all 0.3s ease;
+	margin: 0 15px;
+	line-height: 30px;
+	font-family: "Open Sans", sans-serif;
+
 }
 
 .header .menu>.menu-item>a .plus {
@@ -160,7 +167,7 @@ a {
 	width: 220px;
 	position: absolute;
 	left: 0;
-	top: 100%;
+	top: 120%;
 	background-color: #ffffff;
 	padding: 10px 0;
 	border-top: 3px solid #e91e63;
@@ -176,9 +183,9 @@ a {
 
 .search-icon>.sub-menu {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-	width: 220px;
+	width: 250px;
 	position: absolute;
-	left: 50px;
+	left: 0px;
 	top: 100%;
 	background-color: #ffffff;
 	padding: 10px 0;
