@@ -33,14 +33,18 @@ a {
 
 /*header*/
 .header {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	left: 0;
 	top: 0;
 	z-index: 99;
 	/* padding: 15px; */
+	margin-bottom: 100px;
 }
 
+section {
+	margin-top: 120px;
+}
 
 
 .header-main {
@@ -95,13 +99,18 @@ a {
 }
 
 .button-link button {
-	background: red;
+	background: #E64B38;
 	border: none;
-	padding: 20px 50px;
+	padding: 20px 40px;
 	color: #ffffff;
 	font-size: 20px;
 	font-weight: bold;
-	border-radius: 5px;
+	/* border-radius: 5px; */
+	transition: .5s;
+}
+
+.button-link button:hover {
+	background-color: #150b09;
 }
 
 .header .menu>.menu-item {
@@ -309,12 +318,212 @@ a {
 }
 
 
-/* responsive */
 
-@media(max-width: 991px) {
+
+/* Last Mile Delivery Management  */
+section>.content {
+	display: flex;
+	justify-content: space-evenly;
+	/* align-items: center; */
+}
+
+.delivery {
+	flex-basis: 40%;
+	margin: 50px 100px;
+}
+
+.block-hero__background {
+	flex-basis: 60%;
+
+}
+
+.section-header__tagline,
+.section-header__title {
+	color: #121212;
+	font-size: 60px;
+	line-height: 1.33333;
+	margin-bottom: 0;
+}
+
+.section-header__title {
+	color: #e64b38;
+}
+
+.component-text>p {
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 400;
+	color: #333333;
+	font-family: "Open Sans", sans-serif;
+
+}
+
+.block-hero__background>img {
+	width: 100%;
+}
+
+.hero__section-header {
+	margin-bottom: 46px;
+}
+
+.block-hero__text>p {
+	margin-bottom: 60px;
+}
+
+.btn-collection>ul {
+	display: flex;
+}
+
+.btn-collection>ul>.btn-collection__item {
+	flex-basis: 30%;
+	/* border: 1px solid red; */
+}
+
+.btn-collection>ul>.btn-outline-primary {
+	flex-basis: 40%;
+	/* border: 1px solid red; */
+}
+
+.btn-collection>ul>.btn-collection__item>a {
+	padding: 10px 40px;
+	background-color: #E64B38;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 600;
+	transition: .5s;
+}
+
+.btn-collection>ul>.btn-outline-primary>a {
+	border: 2px solid #E64B38;
+	padding: 10px 40px;
+	font-size: 20px;
+	font-weight: 600;
+	transition: .5s;
+}
+
+.btn-collection>ul>.btn-collection__item>a:hover {
+	background-color: #150b09;
+}
+
+.btn-collection>ul>.btn-outline-primary>a:hover {
+	background-color: #E64B38;
+	color: #ffffff;
+}
+
+.btn-collection>ul .btn-outline-primary {
+	margin-left: 100px;
+}
+
+
+
+/* footer */
+/* fooer part */
+footer {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 50px 100px;
+	background: #F1F1F1;
+}
+
+footer>.container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+footer>.container .sec h2 {
+	position: relative;
+	color: black;
+	font-weight: 500;
+	margin-bottom: 15px;
+	font-size: 17px;
+	color: #141313;
+}
+
+footer>.container .sec h2:hover {
+	color: #727272;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive for header */
+@media(max-width: 1500px) {
+	.logo {
+		/* width: 5%; */
+		/* border: 1px solid red; */
+		flex-basis: 15%;
+		padding: 0 0 0 50px;
+		margin-left: 15px;
+	}
+
+	.header .nav-menu {
+		/* border: 1px solid red; */
+		flex-basis: 70%;
+		padding: 0 0px;
+		margin-left: 0px;
+	}
+
+	.search-icon {
+		flex-basis: 5%;
+		/* border: 1px solid red; */
+		padding-left: 30px;
+	}
+
+	.search-icon a i {
+		font-size: 25px;
+	}
+
+	.button-link {
+		flex-basis: 17%;
+		/* border: 1px solid red; */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 10px;
+
+	}
+
+	.button-link button {
+		padding: 15px 25px;
+	}
+}
+
+@media(max-width: 1210px) {
+	section {
+		margin-top: 85px;
+	}
+
 	.header .menu-overlay.active {
 		visibility: visible;
 		opacity: 1;
+	}
+
+	.header-main {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo img {
+		height: 30px;
+	}
+
+	.search-icon {
+		display: none;
+	}
+
+	.button-link {
+		display: none;
 	}
 
 	.header .nav-menu {
@@ -325,7 +534,7 @@ a {
 		height: 100%;
 		top: 0;
 		overflow-y: auto;
-		background-color: #222222;
+		background-color: #ffffff;
 		z-index: 1000;
 		padding: 15px 0;
 		transition: all 0.5s ease;
@@ -348,18 +557,18 @@ a {
 	}
 
 	.header .menu>.menu-item>a {
-		color: #ffffff;
+		color: #000000;
 		padding: 12px 15px;
-		border-bottom: 1px solid #333333;
+		border-bottom: 1px solid #f5f2f2;
 	}
 
 	.header .menu>.menu-item:first-child>a {
-		border-top: 1px solid #333333;
+		border-top: 1px solid #f5f2f2;
 	}
 
 	.header .menu>.menu-item>a .plus:before,
 	.header .menu>.menu-item>a .plus:after {
-		background-color: #ffffff;
+		background-color: #000000;
 	}
 
 	.header .menu>.menu-item-has-children.active>a .plus:after {
@@ -384,12 +593,84 @@ a {
 
 	.header .menu>.menu-item>.sub-menu>.menu-item>a {
 		padding: 12px 45px;
-		color: #ffffff;
-		border-bottom: 1px solid #333333;
+		color: #000000;
+		border-bottom: 1px solid #f5f2f2;
 	}
 
 	.header .close-nav-menu,
 	.header .open-nav-menu {
 		display: flex;
+	}
+
+
+	/* Last Mile Delivery Management  */
+	section>.content {
+		display: block;
+	}
+
+	.delivery {
+		flex-basis: 100%;
+	}
+
+	.block-hero__background {
+		flex-basis: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.section-header__tagline,
+	.section-header__title {
+		font-size: 40px;
+	}
+
+	.hero__section-header {
+		margin-bottom: 30px;
+	}
+
+	.block-hero__text>p {
+		margin-bottom: 30px;
+	}
+
+	.btn-collection>ul {
+		display: block;
+	}
+
+	.btn-collection>ul>.btn-collection__item>a {
+		padding: 10px 40px;
+		background-color: #E64B38;
+		color: #ffffff;
+		font-size: 20px;
+		font-weight: 600;
+		transition: .5s;
+	}
+
+	.btn-collection>ul>.btn-collection__item {
+		flex-basis: 100%;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	.btn-collection>ul>.btn-outline-primary {
+		flex-basis: 100%;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	.section-header__tagline,
+	.section-header__title {
+		font-size: 30px;
+	}
+
+	.delivery {
+		margin: 50px 40px;
 	}
 }
