@@ -375,12 +375,12 @@ section>.content {
 }
 
 .btn-collection>ul>.btn-collection__item {
-	flex-basis: 30%;
+	flex-basis: 50%;
 	/* border: 1px solid red; */
 }
 
 .btn-collection>ul>.btn-outline-primary {
-	flex-basis: 40%;
+	flex-basis: 50%;
 	/* border: 1px solid red; */
 }
 
@@ -411,40 +411,218 @@ section>.content {
 }
 
 .btn-collection>ul .btn-outline-primary {
-	margin-left: 100px;
+	/* margin-left: 100px; */
 }
 
 
 
 /* footer */
 /* fooer part */
-footer {
-	position: relative;
-	width: 100%;
-	height: auto;
-	padding: 50px 100px;
-	background: #F1F1F1;
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #F1F1F1;
+}
+footer .containerr{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+@media screen and (max-width: 720px) {
+	footer .containerr{ 
+		width: 100%;
+		display: grid;
+		grid-template-columns: 2fr 2fr 2fr;
+		grid-gap: 20px;
+	}
+  }
+  @media screen and (max-width: 420px) {
+	footer .containerr{ 
+		width: 100%;
+		display: grid;
+		grid-template-columns: 2fr 2fr;
+		grid-gap: 20px;
+	}
+  }
+
+footer .containerr .sec h2 {
+    position: relative;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 17px;
+    color: #141313;
+}
+footer .containerr .sec h2:hover {
+    color: #727272;
+    cursor: pointer;
 }
 
-footer>.container {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-gap: 20px;
+.sci {
+    margin-top: 10px;
+    display: grid;
+}
+.sci li {
+    list-style: none; 
+    line-height: 29px;
+}
+.sci li a {
+    text-decoration: none;
+    color: #727272;
+    font-size: 16px;
+}
+.sci li a:hover {
+    color: #E64B38;
 }
 
-footer>.container .sec h2 {
-	position: relative;
-	color: black;
-	font-weight: 500;
-	margin-bottom: 15px;
-	font-size: 17px;
-	color: #141313;
+/* part 02 */
+.footer2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 100px;
+    display: grid;
+    grid-template-columns: 5fr 2fr ;
+    grid-gap: 20px;
+}
+@media screen and (max-width: 720px) {
+	.footer2 {
+		grid-template-columns: 3fr 1fr ;
+	}
+  }
+  @media screen and (max-width: 540px) {
+	.footer2 {
+		grid-template-columns: 2fr;
+	}
+  }
+.footer2_left p{
+    color: #A8A8A8;
+    font-size: 14px;
+}
+.footer2_left p a{
+    color: #A8A8A8;
+    font-size: 14px;
+    text-decoration: none;
+}
+.footer2_left p a:hover{
+    text-decoration: underline;
 }
 
-footer>.container .sec h2:hover {
-	color: #727272;
-	cursor: pointer;
+/* footer2 right part */
+.footer2 .footer2_right {
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    grid-gap: 20px;
+}
+@media screen and (max-width: 720px) {
+	.footer2 .footer2_right {
+		grid-template-columns: 1fr 1fr ;
+	}
+  }
+  @media screen and (max-width: 540px) {
+	.footer2 .footer2_right {
+		grid-template-columns: 1fr;
+	}
+  }
+.footer2_right span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #E64B38;
+}
+.sci2 {
+    margin-top: -14px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 10px;
+}
+.sci2 li {
+    list-style: none;
+}
+.sci2 li a {
+    width: 48px;
+    height: 48px;
+    /* background: blue; */
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.sci2 li a:hover {
+    color: black;
+}
+.sci2 li a span:hover{
+    color: black;
+}
+.sci2 li a span {
+    font-size: 35px;
+    font-weight: bold;
+    color: #E64B38;
+}
+.sci2 li a .fa-brands {
+    color: #E64B38;
+    font-size: 27px;
+}
+.sci2 li a .fa-brands:hover {
+    color: black;
+}
+
+/* let's talk */
+.Lets {
+    background-color: #0077A6;
+    width: 100%;
+    height: auto;
+    position: relative;
+	padding: 20px;
+}
+.Lets h1 {
+    color: white;
+    margin-top: 75px;
+    margin-bottom: 40px;
+    font-size: 42px;
+    text-align: center;
+    justify-content: center;
+}
+
+.Talk {
+    height: auto;
+    width: 18%;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 80px;
+    color: #E64B38;
+    border-radius: 5px;
+    border: 1px solid rgb(246, 236, 236);
+    cursor: pointer;
+}
+.Talk:hover {
+    background-color: #E64B38;
+    color: #F1F1F1;
+}
+.Lets ul {
+    text-align: center;
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .Lets ul:hover {
+    color: white;
+  }
+  .Lets ul li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+.Lets ul li a {
+    color: #E64B38;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.Lets ul li a:hover {
+    color: #F1F1F1;
 }
 
 
